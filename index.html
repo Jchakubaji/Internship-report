@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 5px solid #8fd6e1;
+        border-bottom: 5px solid #8fd6e1;
+        padding: 10px;
+      }
+      .cat-photo {
+        margin: 10px auto 20px;
+        display: block;
+      }
+      .text {
+        font-size: 20px;
+        padding-left: 20px;
+      }
+      .personal-photo {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+      }
+      .cat-photo {
+        width: 900px;
+        height: 500px;
+      }
+      body {
+        background-color: #2c3333;
+        color: #8fd6e1;
+      }
+    </style>
+    <body>
+      <h1 style="text-align: center; text-decoration: underline">
+        DASHAIN INTERNSHIP PROJECT
+      </h1>
+      <p style="text-align: center; font-size: 20px">
+        A brief report on my 2 weeks internship
+      </p>
+      <div class="container">
+        <div class="personal-information">
+          <p style="text-decoration: underline; font-size: 20px">Name</p>
+          <p style="font-size: 30px"><strong>Joseph Chakubaji </strong></p>
+          <p style="text-decoration: underline; font-size: 20px">Class:</p>
+          <p style="font-size: 30px"><strong>As-Level</strong></p>
+        </div>
+
+        <div class="image">
+          <img
+            src="images/joseph.jpg"
+            alt=""
+            class="personal-photo"
+            style="text-align: center"
+          />
+        </div>
+        <div class="text">
+          <p>
+            This Vacation I worked at The Waves Group as a IT intern for 2 weeks
+            as was part of my internship. I learned the following things:
+          </p>
+          <ul>
+            <li>python</li>
+            <ul>
+              <li>conditional</li>
+              <li>for loop</li>
+              <li>while loop</li>
+            </ul>
+            <li>
+              Html
+              <ul>
+                <li>elements</li>
+                <li>attributes</li>
+              </ul>
+            </li>
+            <li>CSS</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 style="text-align: center">Here are some examples of my works:</h2>
+      <p>Used Html and CSS to make this website.</p>
+      <img src="images/cat.png" alt="" class="cat-photo" />
+
+      <p>Used Python to solve the fizz buzz wizz problem.</p>
+      <pre><code class="python" >
+        for x in range (1,501,1): 
+            x3=x%3
+            x5=x%5
+            x7=x%7
+            
+
+            if x3==0 and x5==0 and x7==0:
+                print(x, 'fizzbuzzwizz')
+            elif x5==0 and x7==0:
+                print(x, 'buzzwizz')
+            elif x3==0 and x7==0:
+                print(x, 'fizzwizz')
+            elif x3==0 and x5==0:
+                print (x, "fizzbuzz")
+            elif x3==0:
+                print (x, 'fizz')
+            elif x5==0:
+                print (x, 'buzz')
+            elif x7==0:
+                print(x, 'wizz')
+        
+    </code></pre>
+
+      <p>Used Python to add two corresponding array.</p>
+      <pre><code class="pytho">
+        a=[1,2,3,4,5]
+        b=[2,3,1,6,3]
+
+        for i in range(len(a)):
+            S=a[i]+b[i]
+            print(S)
+    </code></pre>
+    </body>
+  </head>
+</html>
